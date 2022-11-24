@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-
+//Code sourced from https://www.youtube.com/watch?v=qqOAzn05fvk&t=266s
+//Commented by qiuand
 public class IK2 : MonoBehaviour
 {
     //Initialize parameters
