@@ -57,6 +57,7 @@ namespace DitzelGames.FastIK
 
         void Init()
         {
+            print(1);
             //initial array
             Bones = new Transform[ChainLength + 1];
             Positions = new Vector3[ChainLength + 1];
@@ -183,6 +184,7 @@ namespace DitzelGames.FastIK
                     var projectedPole = plane.ClosestPointOnPlane(polePosition);
                     var projectedBone = plane.ClosestPointOnPlane(Positions[i]);
                     var angle = Vector3.SignedAngle(projectedBone - Positions[i - 1], projectedPole - Positions[i - 1], plane.normal);
+                    print(angle);
                     Positions[i] = Quaternion.AngleAxis(angle, plane.normal) * (Positions[i] - Positions[i - 1]) + Positions[i - 1];
                 }
             }
