@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEditor;
 //Code sourced from https://www.youtube.com/watch?v=qqOAzn05fvk&t=266s
 //Commented by qiuand
+
+//This code contains the inverse kinematics algorithm to calculate joint positions relative to an effector, target, and pole
+
 public class IK2 : MonoBehaviour
 {
     //Initialize parameters
@@ -194,7 +197,7 @@ public class IK2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(1);
+/*        print(1);*/
     }
     //Draw Gizmos function
     private void OnDrawGizmos()
