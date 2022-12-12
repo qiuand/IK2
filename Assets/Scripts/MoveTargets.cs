@@ -48,7 +48,7 @@ public class MoveTargets : MonoBehaviour
         //If hits ground
         if (Physics.Raycast(ray, out RaycastHit info, 10, terrainLayer.value))
         {
-            //If other foot is not moving and not already lerping
+            //If other foot is not moving and not already lerping, and step distance is exceeded
             if (Vector3.Distance(newPosition, info.point) > stepDistance && !otherFoot.IsMoving() && lerp >= 1)
             {
                 //Set lerp value to 0
